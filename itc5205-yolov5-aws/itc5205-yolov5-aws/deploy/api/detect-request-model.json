@@ -1,0 +1,11 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "DetectRequest",
+  "type": "object",
+  "required": ["key"],
+  "properties": {
+    "bucket": { "type": "string", "minLength": 3 },
+    "key":    { "type": "string", "pattern": "^input/.+", "maxLength": 512 }
+  },
+  "additionalProperties": false
+}
